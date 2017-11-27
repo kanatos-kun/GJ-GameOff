@@ -1,0 +1,95 @@
+{
+  "name": "GJ-GameOff",
+  "assets": [
+    {
+      "id": "16",
+      "name": "Credits",
+      "type": "script"
+    },
+    {
+      "id": "56",
+      "name": "Accens",
+      "type": "font"
+    },
+    {
+      "id": "57",
+      "name": "Font",
+      "type": "font"
+    },
+    {
+      "id": "51",
+      "name": "background TitleScreen",
+      "type": "sprite"
+    },
+    {
+      "id": "58",
+      "name": "rectangle arrondie 20px",
+      "type": "sprite"
+    },
+    {
+      "id": "55",
+      "name": "GUI bouton inactif",
+      "type": "sprite"
+    },
+    {
+      "id": "62",
+      "name": "GUI bouton hover",
+      "type": "sprite"
+    },
+    {
+      "id": "63",
+      "name": "GUI bouton actif",
+      "type": "sprite"
+    },
+    {
+      "id": "59",
+      "name": "cursor",
+      "type": "sprite"
+    },
+    {
+      "id": "66",
+      "name": "player",
+      "type": "sprite"
+    },
+    {
+      "id": "54",
+      "name": "mouse behavior",
+      "type": "script"
+    },
+    {
+      "id": "53",
+      "name": "debug behavior",
+      "type": "script"
+    },
+    {
+      "id": "61",
+      "name": "GUI behavior",
+      "type": "script"
+    },
+    {
+      "id": "67",
+      "name": "player behavior",
+      "type": "script"
+    },
+    {
+      "id": "52",
+      "name": "title scene",
+      "type": "scene"
+    },
+    {
+      "id": "64",
+      "name": "util",
+      "type": "script"
+    },
+    {
+      "id": "60",
+      "name": "Game",
+      "type": "script"
+    },
+    {
+      "id": "65",
+      "name": "game scene",
+      "type": "scene"
+    }
+  ]
+}
