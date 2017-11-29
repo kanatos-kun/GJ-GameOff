@@ -32,7 +32,11 @@ class MouseBehavior extends Sup.Behavior {
     }
 
     
-  } 
+  }
+  
+  getPosition():Sup.Math.Vector2{
+    return this.mouseInputPosition;
+  }
   
 }
 Sup.registerBehavior(MouseBehavior);

@@ -13,17 +13,17 @@
     },
     {
       "id": "57",
-      "name": "Font",
+      "name": "Visitor",
       "type": "font"
-    },
-    {
-      "id": "51",
-      "name": "background TitleScreen",
-      "type": "sprite"
     },
     {
       "id": "58",
       "name": "rectangle arrondie 20px",
+      "type": "sprite"
+    },
+    {
+      "id": "84",
+      "name": "rectangle",
       "type": "sprite"
     },
     {
@@ -67,14 +67,226 @@
       "type": "script"
     },
     {
-      "id": "67",
-      "name": "player behavior",
-      "type": "script"
+      "id": "81",
+      "name": "title",
+      "type": null,
+      "children": [
+        {
+          "id": "52",
+          "name": "title scene",
+          "type": "scene"
+        },
+        {
+          "id": "51",
+          "name": "background TitleScreen",
+          "type": "sprite"
+        }
+      ]
     },
     {
-      "id": "52",
-      "name": "title scene",
-      "type": "scene"
+      "id": "82",
+      "name": "gamespace",
+      "type": null,
+      "children": [
+        {
+          "id": "102",
+          "name": "bullet",
+          "type": "sprite"
+        },
+        {
+          "id": "67",
+          "name": "player behavior",
+          "type": "script"
+        },
+        {
+          "id": "85",
+          "name": "gameSpaceBehavior",
+          "type": "script"
+        },
+        {
+          "id": "65",
+          "name": "scene",
+          "type": "scene"
+        },
+        {
+          "id": "99",
+          "name": "HUD",
+          "type": null,
+          "children": [
+            {
+              "id": "104",
+              "name": "scoreBehavior",
+              "type": "script"
+            },
+            {
+              "id": "105",
+              "name": "playerLifeBehavior",
+              "type": "script"
+            },
+            {
+              "id": "100",
+              "name": "prefab",
+              "type": "scene"
+            },
+            {
+              "id": "68",
+              "name": "HUD_GUI_game",
+              "type": "sprite"
+            },
+            {
+              "id": "101",
+              "name": "HUD_ship",
+              "type": "sprite"
+            }
+          ]
+        },
+        {
+          "id": "72",
+          "name": "spaceBackground",
+          "type": null,
+          "children": [
+            {
+              "id": "73",
+              "name": "star_big",
+              "type": "sprite"
+            },
+            {
+              "id": "74",
+              "name": "star_middle",
+              "type": "sprite"
+            },
+            {
+              "id": "75",
+              "name": "star_small",
+              "type": "sprite"
+            },
+            {
+              "id": "76",
+              "name": "black",
+              "type": "sprite"
+            },
+            {
+              "id": "77",
+              "name": "magenta_mist",
+              "type": "sprite"
+            },
+            {
+              "id": "78",
+              "name": "blue_mist",
+              "type": "sprite"
+            },
+            {
+              "id": "79",
+              "name": "cold_nebula",
+              "type": "sprite"
+            },
+            {
+              "id": "80",
+              "name": "hot_nebula",
+              "type": "sprite"
+            },
+            {
+              "id": "71",
+              "name": "prefab",
+              "type": "scene"
+            },
+            {
+              "id": "94",
+              "name": "asteroid",
+              "type": null,
+              "children": []
+            }
+          ]
+        },
+        {
+          "id": "87",
+          "name": "Enemi",
+          "type": null,
+          "children": [
+            {
+              "id": "88",
+              "name": "prefab",
+              "type": "scene"
+            },
+            {
+              "id": "89",
+              "name": "enemi_01",
+              "type": "sprite"
+            },
+            {
+              "id": "90",
+              "name": "enemi_02",
+              "type": "sprite"
+            },
+            {
+              "id": "91",
+              "name": "enemi_03",
+              "type": "sprite"
+            },
+            {
+              "id": "92",
+              "name": "enemi_04",
+              "type": "sprite"
+            },
+            {
+              "id": "93",
+              "name": "enemi_05",
+              "type": "sprite"
+            }
+          ]
+        },
+        {
+          "id": "95",
+          "name": "asteroid",
+          "type": null,
+          "children": [
+            {
+              "id": "107",
+              "name": "asteroidBehavior",
+              "type": "script"
+            },
+            {
+              "id": "96",
+              "name": "redAsteroid_01",
+              "type": "sprite"
+            },
+            {
+              "id": "97",
+              "name": "redAsteroid_02",
+              "type": "sprite"
+            },
+            {
+              "id": "98",
+              "name": "redAsteroid_03",
+              "type": "sprite"
+            },
+            {
+              "id": "108",
+              "name": "small_asteroid",
+              "type": null,
+              "children": [
+                {
+                  "id": "106",
+                  "name": "prefab",
+                  "type": "scene"
+                }
+              ]
+            },
+            {
+              "id": "109",
+              "name": "medium_asteroid",
+              "type": null,
+              "children": []
+            },
+            {
+              "id": "110",
+              "name": "large_asteroid",
+              "type": null,
+              "children": []
+            }
+          ]
+        }
+      ]
     },
     {
       "id": "64",
@@ -85,11 +297,6 @@
       "id": "60",
       "name": "Game",
       "type": "script"
-    },
-    {
-      "id": "65",
-      "name": "game scene",
-      "type": "scene"
     }
   ]
 }

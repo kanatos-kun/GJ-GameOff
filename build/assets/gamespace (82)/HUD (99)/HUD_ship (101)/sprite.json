@@ -5,14 +5,14 @@
   ],
   "filtering": "smooth",
   "wrapping": "clampToEdge",
-  "pixelsPerUnit": 100,
+  "pixelsPerUnit": 70,
   "framesPerSecond": 10,
-  "opacity": 1,
+  "opacity": null,
   "alphaTest": 0,
   "frameOrder": "rows",
   "grid": {
-    "width": 48,
-    "height": 41
+    "width": 142,
+    "height": 136
   },
   "origin": {
     "x": 0.5,

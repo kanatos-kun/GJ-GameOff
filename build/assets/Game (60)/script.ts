@@ -1,8 +1,11 @@
 namespace Game 
 {
   export let  state : string = "game";
-  Sup.Input.setMouseVisible(false);
+  export let score : number = 0;
+  export let player : Object = { life    : 200,
+                                 maxLife : 200};
   
+  Sup.Input.setMouseVisible(false);
 
   
   export function changeState():void{
@@ -10,12 +13,12 @@ namespace Game
     switch(state)
     {
       case "title":
-      Sup.loadScene("title scene");
+      Sup.loadScene("title/scene");
       break;
 
       case "game":
       Sup.log(`changement de scene sur ${state}!`);
-      Sup.loadScene("game scene");
+      Sup.loadScene("gamespace/scene");
       break;
 
       default:

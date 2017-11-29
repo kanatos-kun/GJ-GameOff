@@ -8,11 +8,11 @@
   "pixelsPerUnit": 100,
   "framesPerSecond": 10,
   "opacity": 1,
-  "alphaTest": 0,
+  "alphaTest": 0.1,
   "frameOrder": "rows",
   "grid": {
-    "width": 48,
-    "height": 41
+    "width": 3000,
+    "height": 1500
   },
   "origin": {
     "x": 0.5,
