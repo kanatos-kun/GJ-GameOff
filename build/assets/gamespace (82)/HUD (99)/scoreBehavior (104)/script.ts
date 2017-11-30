@@ -5,6 +5,7 @@ class ScoreBehavior extends Sup.Behavior {
 
   update() {
     this.actor.textRenderer.setText(`score : ${Game.score}`);
+    
   }
 }
 Sup.registerBehavior(ScoreBehavior);

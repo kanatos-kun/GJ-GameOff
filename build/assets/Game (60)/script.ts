@@ -1,6 +1,6 @@
 namespace Game 
 {
-  export let  state : string = "game";
+  export let  state : string = "title";
   export let score : number = 0;
   export let player : Object = { life    : 200,
                                  maxLife : 200};
@@ -9,15 +9,16 @@ namespace Game
 
   
   export function changeState():void{
-    Sup.log(`changement de scene sur ${state}!`);
     switch(state)
     {
       case "title":
       Sup.loadScene("title/scene");
       break;
-
       case "game":
-      Sup.log(`changement de scene sur ${state}!`);
+      score = 0;
+      player["life"] = 200;
+      player["maxLife"] = 200;
+      Sup.loadScene("title/scene");
       Sup.loadScene("gamespace/scene");
       break;
 

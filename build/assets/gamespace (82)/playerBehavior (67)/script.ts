@@ -1,30 +1,39 @@
 class PlayerBehavior extends Sup.Behavior {
-  speed:number = 250;
+
+  
   fireSpeedWeapon:number = 800;
   shootTime : number = 50;
   private _shootTime : number = this.shootTime;
   private shootStart : boolean = false;
   private shootReturn : boolean = false;
+  private vecFireSpeedWeapon : Sup.Math.Vector2;
+
+  speed:number = 250;
   private maxSpeed:number = this.speed;
   private rotation : Sup.Math.Vector3;
   private move : Sup.Math.Vector3;
   private vecSpeed : Sup.Math.Vector2;
-  private vecFireSpeedWeapon : Sup.Math.Vector2;
   private desceleration : boolean = false;
+  
   //private enemisBodies : Sup.ArcadePhysics2D.Body[] =[];
   private asteroidBodies : Sup.ArcadePhysics2D.Body[] =[];
+  private limitBodies : Sup.ArcadePhysics2D.Body[] =[];
   private mousePosition : Sup.Math.Vector2;
   private distance : number = 0;
   private startDistShip : Sup.Math.Vector3;
   private movingShip : boolean = false;
-  
   mouse : Sup.Actor;
   
   awake() {
     //let enemisActors = Sup.getActor("enemi").getChildren();
     //for(let enemiActor of enemisActors) this.enemisBodies.push(enemiActor.arcadeBody2D);
     let asteroidActors = Sup.getActor("asteroids").getChildren();
-    for(let asteroidActor of asteroidActors) this.asteroidBodies.push(asteroidActor.arcadeBody2D);
+    for(let asteroidActor of asteroidActors) 
+    {
+      if(asteroidActor.getName() != "asset") this.asteroidBodies.push(asteroidActor.arcadeBody2D);
+    }
+    let limitActors = Sup.getActor("limit").getChildren();
+    for(let limitActor of limitActors) this.limitBodies.push(limitActor.arcadeBody2D);
     this.rotation = new Sup.Math.Vector3(0,0,0);
     this.vecSpeed = new Sup.Math.Vector2(0,0);
     this.vecFireSpeedWeapon = new Sup.Math.Vector2(0,0);
@@ -50,16 +59,18 @@ class PlayerBehavior extends Sup.Behavior {
     }
     */
     
+   for(let limitBodie of this.limitBodies) Sup.ArcadePhysics2D.collides(this.actor.arcadeBody2D,limitBodie);
+    
     for(let asteroidBodie of this.asteroidBodies)
     {
       Sup.ArcadePhysics2D.collides(this.actor.arcadeBody2D,asteroidBodie);
-      Sup.log(this.asteroidBodies.indexOf(asteroidBodie));
       if(this.actor.arcadeBody2D.getTouches().top    ||
          this.actor.arcadeBody2D.getTouches().bottom ||
          this.actor.arcadeBody2D.getTouches().right  ||
          this.actor.arcadeBody2D.getTouches().left)
       {
-        Game.player["life"] -=10;
+        Sup.Audio.playSound("gamespace/explosion",0.5);
+        Game.player["life"] -=asteroidBodie.actor.getBehavior(AsteroidBehavior).attack;
       }
       let shoot = this.actor.getChild("shoot");
       Sup.ArcadePhysics2D.collides(shoot.arcadeBody2D,asteroidBodie);
@@ -73,10 +84,20 @@ class PlayerBehavior extends Sup.Behavior {
         asteroidBodie.actor.getBehavior(AsteroidBehavior).life -=1;
         if(asteroidBodie.actor.getBehavior(AsteroidBehavior).life<=0)
           {
+            Sup.Audio.playSound("gamespace/explosion",0.5);
             let index = this.asteroidBodies.indexOf(asteroidBodie);
             this.asteroidBodies.splice(index,1);
           }
       }
+    }
+    
+    if(Game.player["life"]<= 0 ){
+      Game.player["life"] = 0;
+      this.actor.destroy();
+      Sup.getActor("window_gameover").setVisible(true);
+      Sup.getActor("window_gameover").getChild("texte").textRenderer.setText(`GAME OVER \n SCORE : ${Game.score}`);
+      Sup.getActor("window_gameover").setY(Sup.getActor("window_gameover").getY()-6);
+      Sup.log(Sup.getActor("window_gameover").getY());
     }
     
     if(!this.shootReturn && !this.shootStart)
@@ -129,6 +150,7 @@ class PlayerBehavior extends Sup.Behavior {
           {
             if(Sup.Input.wasMouseButtonJustPressed(2))
             {
+              Sup.Audio.playSound("gamespace/shoot");
               this.move.x = Math.cos(this.rotation.z);
               this.move.y = Math.sin(this.rotation.z);
               this.vecFireSpeedWeapon.x = this.move.x*this.fireSpeedWeapon/10000;

@@ -25,7 +25,9 @@ class MouseBehavior extends Sup.Behavior {
           for(var j=0;j<GUI.getChildren().length;j++){
             let GUIButtonName = GUI.getChildren()[j].getName();
             let GUIButton = GUI.getChild(GUIButtonName);
-            GUIButton.getBehavior(GUIBehavior).checkMouse(this.mouseActor);
+            if (GUIButtonName.search(/button/)==0){
+             GUIButton.getBehavior(GUIBehavior).checkMouse(this.mouseActor);              
+            }
           } 
         }
       }

@@ -182,6 +182,50 @@
           "prefab": null
         },
         {
+          "id": "13",
+          "name": "small_star",
+          "children": [],
+          "components": [
+            {
+              "type": "SpriteRenderer",
+              "config": {
+                "formatVersion": 1,
+                "spriteAssetId": "75",
+                "animationId": null,
+                "horizontalFlip": false,
+                "verticalFlip": false,
+                "castShadow": false,
+                "receiveShadow": false,
+                "color": "ffffff",
+                "overrideOpacity": false,
+                "opacity": null,
+                "materialType": "basic",
+                "shaderAssetId": null
+              },
+              "id": "0"
+            }
+          ],
+          "position": {
+            "x": -23.53777503967285,
+            "y": -0.6607701182365417,
+            "z": 0.09999990463256836
+          },
+          "orientation": {
+            "x": 0,
+            "y": 0,
+            "z": 0,
+            "w": 1
+          },
+          "scale": {
+            "x": 1,
+            "y": 1,
+            "z": 1
+          },
+          "visible": true,
+          "layer": 0,
+          "prefab": null
+        },
+        {
           "id": "9",
           "name": "small_star",
           "children": [],
@@ -259,6 +303,50 @@
             "y": 0,
             "z": 0,
             "w": 1
+          },
+          "scale": {
+            "x": 1,
+            "y": 1,
+            "z": 1
+          },
+          "visible": true,
+          "layer": 0,
+          "prefab": null
+        },
+        {
+          "id": "12",
+          "name": "magenta_mist",
+          "children": [],
+          "components": [
+            {
+              "type": "SpriteRenderer",
+              "config": {
+                "formatVersion": 1,
+                "spriteAssetId": "77",
+                "animationId": null,
+                "horizontalFlip": false,
+                "verticalFlip": false,
+                "castShadow": false,
+                "receiveShadow": false,
+                "color": "ffffff",
+                "overrideOpacity": false,
+                "opacity": null,
+                "materialType": "basic",
+                "shaderAssetId": null
+              },
+              "id": "0"
+            }
+          ],
+          "position": {
+            "x": -24.205081939697266,
+            "y": 2.002634286880493,
+            "z": 0.09999990463256836
+          },
+          "orientation": {
+            "x": 0,
+            "y": 0,
+            "z": 0.7071067811865475,
+            "w": 0.7071067811865476
           },
           "scale": {
             "x": 1,
@@ -358,6 +446,50 @@
           "prefab": null
         },
         {
+          "id": "14",
+          "name": "blue_nebula",
+          "children": [],
+          "components": [
+            {
+              "type": "SpriteRenderer",
+              "config": {
+                "formatVersion": 1,
+                "spriteAssetId": "79",
+                "animationId": null,
+                "horizontalFlip": false,
+                "verticalFlip": false,
+                "castShadow": false,
+                "receiveShadow": false,
+                "color": "ffffff",
+                "overrideOpacity": true,
+                "opacity": 0.46,
+                "materialType": "basic",
+                "shaderAssetId": null
+              },
+              "id": "0"
+            }
+          ],
+          "position": {
+            "x": -25.370128631591797,
+            "y": -2.002040147781372,
+            "z": 0.09999990463256836
+          },
+          "orientation": {
+            "x": 0,
+            "y": 0,
+            "z": 0.49242356010346716,
+            "w": 0.8703556959398997
+          },
+          "scale": {
+            "x": 1,
+            "y": 1,
+            "z": 1
+          },
+          "visible": true,
+          "layer": 0,
+          "prefab": null
+        },
+        {
           "id": "10",
           "name": "blue_mist",
           "children": [],
@@ -384,6 +516,50 @@
           "position": {
             "x": 12.241902351379395,
             "y": 1.2763906717300415,
+            "z": 0.09999966621398926
+          },
+          "orientation": {
+            "x": 0,
+            "y": 0,
+            "z": 0,
+            "w": 1
+          },
+          "scale": {
+            "x": 1,
+            "y": 1,
+            "z": 1
+          },
+          "visible": true,
+          "layer": 0,
+          "prefab": null
+        },
+        {
+          "id": "11",
+          "name": "blue_mist",
+          "children": [],
+          "components": [
+            {
+              "type": "SpriteRenderer",
+              "config": {
+                "formatVersion": 1,
+                "spriteAssetId": "78",
+                "animationId": null,
+                "horizontalFlip": false,
+                "verticalFlip": false,
+                "castShadow": false,
+                "receiveShadow": false,
+                "color": "ffffff",
+                "overrideOpacity": false,
+                "opacity": null,
+                "materialType": "basic",
+                "shaderAssetId": null
+              },
+              "id": "0"
+            }
+          ],
+          "position": {
+            "x": -11.775485038757324,
+            "y": -6.077402114868164,
             "z": 0.09999966621398926
           },
           "orientation": {

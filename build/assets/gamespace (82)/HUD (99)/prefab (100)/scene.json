@@ -143,6 +143,47 @@
           "prefab": null
         },
         {
+          "id": "6",
+          "name": "asteroidHUD",
+          "children": [],
+          "components": [
+            {
+              "type": "TextRenderer",
+              "config": {
+                "formatVersion": 2,
+                "fontAssetId": "57",
+                "text": "asteroid : ",
+                "alignment": "center",
+                "verticalAlignment": "center",
+                "size": 80,
+                "color": "06ad0e",
+                "overrideOpacity": false,
+                "opacity": null
+              },
+              "id": "0"
+            }
+          ],
+          "position": {
+            "x": 6.078110674076015,
+            "y": 9.722640143202398,
+            "z": 0
+          },
+          "orientation": {
+            "x": 0,
+            "y": 0,
+            "z": 0,
+            "w": 1
+          },
+          "scale": {
+            "x": 1,
+            "y": 1,
+            "z": 1
+          },
+          "visible": true,
+          "layer": 0,
+          "prefab": null
+        },
+        {
           "id": "5",
           "name": "playerLife",
           "children": [],

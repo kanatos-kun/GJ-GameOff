@@ -185,6 +185,349 @@
           "prefab": {
             "sceneAssetId": "100"
           }
+        },
+        {
+          "id": "16",
+          "name": "GUI",
+          "children": [
+            {
+              "id": "17",
+              "name": "window_gameover",
+              "children": [
+                {
+                  "id": "19",
+                  "name": "texte",
+                  "children": [],
+                  "components": [
+                    {
+                      "type": "TextRenderer",
+                      "config": {
+                        "formatVersion": 2,
+                        "fontAssetId": "57",
+                        "text": "Game over\nscore : 1000000",
+                        "alignment": "center",
+                        "verticalAlignment": "center",
+                        "size": 140,
+                        "color": null,
+                        "overrideOpacity": true,
+                        "opacity": 1
+                      },
+                      "id": "0"
+                    }
+                  ],
+                  "position": {
+                    "x": 0.01055863220244646,
+                    "y": 0.20811402797698975,
+                    "z": 0
+                  },
+                  "orientation": {
+                    "x": 0,
+                    "y": 0,
+                    "z": 0,
+                    "w": 1
+                  },
+                  "scale": {
+                    "x": 1,
+                    "y": 1,
+                    "z": 1
+                  },
+                  "visible": true,
+                  "layer": 0,
+                  "prefab": null
+                },
+                {
+                  "id": "18",
+                  "name": "button_titlescreen",
+                  "children": [
+                    {
+                      "id": "20",
+                      "name": "actif",
+                      "children": [],
+                      "components": [
+                        {
+                          "type": "SpriteRenderer",
+                          "config": {
+                            "formatVersion": 1,
+                            "spriteAssetId": "63",
+                            "animationId": null,
+                            "horizontalFlip": false,
+                            "verticalFlip": false,
+                            "castShadow": false,
+                            "receiveShadow": false,
+                            "color": "ffffff",
+                            "overrideOpacity": false,
+                            "opacity": null,
+                            "materialType": "basic",
+                            "shaderAssetId": null
+                          },
+                          "id": "0"
+                        }
+                      ],
+                      "position": {
+                        "x": -1.44891357421875,
+                        "y": 0.36881065368652344,
+                        "z": 0
+                      },
+                      "orientation": {
+                        "x": 0,
+                        "y": 0,
+                        "z": 0,
+                        "w": 1
+                      },
+                      "scale": {
+                        "x": 0.5,
+                        "y": 0.3,
+                        "z": 1
+                      },
+                      "visible": false,
+                      "layer": 0,
+                      "prefab": null
+                    },
+                    {
+                      "id": "21",
+                      "name": "hover",
+                      "children": [],
+                      "components": [
+                        {
+                          "type": "SpriteRenderer",
+                          "config": {
+                            "formatVersion": 1,
+                            "spriteAssetId": "62",
+                            "animationId": null,
+                            "horizontalFlip": false,
+                            "verticalFlip": false,
+                            "castShadow": false,
+                            "receiveShadow": false,
+                            "color": "ffffff",
+                            "overrideOpacity": false,
+                            "opacity": null,
+                            "materialType": "basic",
+                            "shaderAssetId": null
+                          },
+                          "id": "0"
+                        }
+                      ],
+                      "position": {
+                        "x": -1.449,
+                        "y": 0.369,
+                        "z": 0
+                      },
+                      "orientation": {
+                        "x": 0,
+                        "y": 0,
+                        "z": 0,
+                        "w": 1
+                      },
+                      "scale": {
+                        "x": 0.5,
+                        "y": 0.3,
+                        "z": 1
+                      },
+                      "visible": false,
+                      "layer": 0,
+                      "prefab": null
+                    },
+                    {
+                      "id": "22",
+                      "name": "inactif",
+                      "children": [],
+                      "components": [
+                        {
+                          "type": "SpriteRenderer",
+                          "config": {
+                            "formatVersion": 1,
+                            "spriteAssetId": "55",
+                            "animationId": null,
+                            "horizontalFlip": false,
+                            "verticalFlip": false,
+                            "castShadow": false,
+                            "receiveShadow": false,
+                            "color": "ffffff",
+                            "overrideOpacity": false,
+                            "opacity": null,
+                            "materialType": "basic",
+                            "shaderAssetId": null
+                          },
+                          "id": "0"
+                        }
+                      ],
+                      "position": {
+                        "x": -1.449,
+                        "y": 0.369,
+                        "z": 0
+                      },
+                      "orientation": {
+                        "x": 0,
+                        "y": 0,
+                        "z": 0,
+                        "w": 1
+                      },
+                      "scale": {
+                        "x": 0.5,
+                        "y": 0.3,
+                        "z": 1
+                      },
+                      "visible": true,
+                      "layer": 0,
+                      "prefab": null
+                    },
+                    {
+                      "id": "24",
+                      "name": "texte",
+                      "children": [],
+                      "components": [
+                        {
+                          "type": "TextRenderer",
+                          "config": {
+                            "formatVersion": 2,
+                            "fontAssetId": "56",
+                            "text": "r  e  s  t  a  r  t ",
+                            "alignment": "center",
+                            "verticalAlignment": "center",
+                            "size": 70,
+                            "color": "fff000",
+                            "overrideOpacity": false,
+                            "opacity": null
+                          },
+                          "id": "0"
+                        }
+                      ],
+                      "position": {
+                        "x": 0.2420501708984375,
+                        "y": 0.010924339294433594,
+                        "z": 0.09999990463256836
+                      },
+                      "orientation": {
+                        "x": 0,
+                        "y": 0,
+                        "z": 0,
+                        "w": 1
+                      },
+                      "scale": {
+                        "x": 1,
+                        "y": 1,
+                        "z": 1
+                      },
+                      "visible": true,
+                      "layer": 0,
+                      "prefab": null
+                    }
+                  ],
+                  "components": [
+                    {
+                      "type": "SpriteRenderer",
+                      "config": {
+                        "formatVersion": 1,
+                        "spriteAssetId": null,
+                        "animationId": null,
+                        "horizontalFlip": false,
+                        "verticalFlip": false,
+                        "castShadow": false,
+                        "receiveShadow": false,
+                        "color": "ffffff",
+                        "overrideOpacity": false,
+                        "opacity": null,
+                        "materialType": "basic",
+                        "shaderAssetId": null
+                      },
+                      "id": "0"
+                    },
+                    {
+                      "type": "Behavior",
+                      "config": {
+                        "behaviorName": "GUIBehavior",
+                        "propertyValues": {
+                          "state": {
+                            "type": "string",
+                            "value": "title"
+                          }
+                        }
+                      },
+                      "id": "1"
+                    }
+                  ],
+                  "position": {
+                    "x": -0.0017361363679810893,
+                    "y": -0.8192846991780129,
+                    "z": 0
+                  },
+                  "orientation": {
+                    "x": 0,
+                    "y": 0,
+                    "z": 0,
+                    "w": 1
+                  },
+                  "scale": {
+                    "x": 1,
+                    "y": 0.8,
+                    "z": 1
+                  },
+                  "visible": true,
+                  "layer": 0,
+                  "prefab": null
+                }
+              ],
+              "components": [
+                {
+                  "type": "SpriteRenderer",
+                  "config": {
+                    "formatVersion": 1,
+                    "spriteAssetId": "58",
+                    "animationId": null,
+                    "horizontalFlip": false,
+                    "verticalFlip": false,
+                    "castShadow": false,
+                    "receiveShadow": false,
+                    "color": "797979",
+                    "overrideOpacity": true,
+                    "opacity": 0.5,
+                    "materialType": "basic",
+                    "shaderAssetId": null
+                  },
+                  "id": "0"
+                }
+              ],
+              "position": {
+                "x": 0.15541839599609375,
+                "y": 0.6480510234832764,
+                "z": 0
+              },
+              "orientation": {
+                "x": 0,
+                "y": 0,
+                "z": 0,
+                "w": 1
+              },
+              "scale": {
+                "x": 1.2,
+                "y": 1.2,
+                "z": 1
+              },
+              "visible": true,
+              "layer": 0,
+              "prefab": null
+            }
+          ],
+          "components": [],
+          "position": {
+            "x": -0.0449981689453125,
+            "y": 6.398238658905029,
+            "z": -1.5
+          },
+          "orientation": {
+            "x": 0,
+            "y": 0,
+            "z": 0,
+            "w": 1
+          },
+          "scale": {
+            "x": 1,
+            "y": 1,
+            "z": 1
+          },
+          "visible": true,
+          "layer": 0,
+          "prefab": null
         }
       ],
       "components": [
@@ -301,13 +644,13 @@
       "name": "asteroids",
       "children": [
         {
-          "id": "14",
-          "name": "asteroid",
+          "id": "33",
+          "name": "smallAsteroid",
           "children": [],
           "components": [],
           "position": {
-            "x": 0,
-            "y": 0,
+            "x": 15.733047485351562,
+            "y": 6.778697967529297,
             "z": 0
           },
           "orientation": {
@@ -328,13 +671,13 @@
           }
         },
         {
-          "id": "15",
-          "name": "asteroid",
+          "id": "40",
+          "name": "smallAsteroid",
           "children": [],
           "components": [],
           "position": {
-            "x": 2.6343536376953125,
-            "y": 0.976466178894043,
+            "x": -17.270118713378906,
+            "y": 6.778697967529297,
             "z": 0
           },
           "orientation": {
@@ -353,13 +696,636 @@
           "prefab": {
             "sceneAssetId": "106"
           }
+        },
+        {
+          "id": "49",
+          "name": "smallAsteroid",
+          "children": [],
+          "components": [],
+          "position": {
+            "x": -20.668426513671875,
+            "y": -8.52161693572998,
+            "z": 0
+          },
+          "orientation": {
+            "x": 0,
+            "y": 0,
+            "z": 0,
+            "w": 1
+          },
+          "scale": {
+            "x": 1,
+            "y": 1,
+            "z": 1
+          },
+          "visible": true,
+          "layer": 0,
+          "prefab": {
+            "sceneAssetId": "106"
+          }
+        },
+        {
+          "id": "42",
+          "name": "smallAsteroid",
+          "children": [],
+          "components": [],
+          "position": {
+            "x": -1.8710098266601562,
+            "y": 8.375115156173706,
+            "z": 0
+          },
+          "orientation": {
+            "x": 0,
+            "y": 0,
+            "z": 0,
+            "w": 1
+          },
+          "scale": {
+            "x": 1,
+            "y": 1,
+            "z": 1
+          },
+          "visible": true,
+          "layer": 0,
+          "prefab": {
+            "sceneAssetId": "106"
+          }
+        },
+        {
+          "id": "43",
+          "name": "smallAsteroid",
+          "children": [],
+          "components": [],
+          "position": {
+            "x": 3.171142578125,
+            "y": 3.0326499938964844,
+            "z": 0
+          },
+          "orientation": {
+            "x": 0,
+            "y": 0,
+            "z": 0,
+            "w": 1
+          },
+          "scale": {
+            "x": 1,
+            "y": 1,
+            "z": 1
+          },
+          "visible": true,
+          "layer": 0,
+          "prefab": {
+            "sceneAssetId": "106"
+          }
+        },
+        {
+          "id": "34",
+          "name": "mediumAsteroid",
+          "children": [],
+          "components": [],
+          "position": {
+            "x": -8.757858276367188,
+            "y": 3.3610658645629883,
+            "z": 0
+          },
+          "orientation": {
+            "x": 0,
+            "y": 0,
+            "z": 0,
+            "w": 1
+          },
+          "scale": {
+            "x": 1,
+            "y": 1,
+            "z": 1
+          },
+          "visible": true,
+          "layer": 0,
+          "prefab": {
+            "sceneAssetId": "112"
+          }
+        },
+        {
+          "id": "38",
+          "name": "mediumAsteroid",
+          "children": [],
+          "components": [],
+          "position": {
+            "x": -15.175132751464844,
+            "y": -1.831242561340332,
+            "z": 0
+          },
+          "orientation": {
+            "x": 0,
+            "y": 0,
+            "z": 0,
+            "w": 1
+          },
+          "scale": {
+            "x": 1,
+            "y": 1,
+            "z": 1
+          },
+          "visible": true,
+          "layer": 0,
+          "prefab": {
+            "sceneAssetId": "112"
+          }
+        },
+        {
+          "id": "39",
+          "name": "mediumAsteroid",
+          "children": [],
+          "components": [],
+          "position": {
+            "x": 10.537467956542969,
+            "y": 3.6534786224365234,
+            "z": 0
+          },
+          "orientation": {
+            "x": 0,
+            "y": 0,
+            "z": 0,
+            "w": 1
+          },
+          "scale": {
+            "x": 1,
+            "y": 1,
+            "z": 1
+          },
+          "visible": true,
+          "layer": 0,
+          "prefab": {
+            "sceneAssetId": "112"
+          }
+        },
+        {
+          "id": "44",
+          "name": "mediumAsteroid",
+          "children": [],
+          "components": [],
+          "position": {
+            "x": 5.22662353515625,
+            "y": -1.973496437072754,
+            "z": 0
+          },
+          "orientation": {
+            "x": 0,
+            "y": 0,
+            "z": 0,
+            "w": 1
+          },
+          "scale": {
+            "x": 1,
+            "y": 1,
+            "z": 1
+          },
+          "visible": true,
+          "layer": 0,
+          "prefab": {
+            "sceneAssetId": "112"
+          }
+        },
+        {
+          "id": "45",
+          "name": "mediumAsteroid",
+          "children": [],
+          "components": [],
+          "position": {
+            "x": -1.7912826538085938,
+            "y": -5.909218788146973,
+            "z": 0
+          },
+          "orientation": {
+            "x": 0,
+            "y": 0,
+            "z": 0,
+            "w": 1
+          },
+          "scale": {
+            "x": 1,
+            "y": 1,
+            "z": 1
+          },
+          "visible": true,
+          "layer": 0,
+          "prefab": {
+            "sceneAssetId": "112"
+          }
+        },
+        {
+          "id": "46",
+          "name": "mediumAsteroid",
+          "children": [],
+          "components": [],
+          "position": {
+            "x": 12.48162841796875,
+            "y": -4.052000999450684,
+            "z": 0
+          },
+          "orientation": {
+            "x": 0,
+            "y": 0,
+            "z": 0,
+            "w": 1
+          },
+          "scale": {
+            "x": 1,
+            "y": 1,
+            "z": 1
+          },
+          "visible": true,
+          "layer": 0,
+          "prefab": {
+            "sceneAssetId": "112"
+          }
+        },
+        {
+          "id": "35",
+          "name": "largeAsteroid",
+          "children": [],
+          "components": [],
+          "position": {
+            "x": -0.225860595703125,
+            "y": -8.156161308288574,
+            "z": 0
+          },
+          "orientation": {
+            "x": 0,
+            "y": 0,
+            "z": 0,
+            "w": 1
+          },
+          "scale": {
+            "x": 1,
+            "y": 1,
+            "z": 1
+          },
+          "visible": true,
+          "layer": 0,
+          "prefab": {
+            "sceneAssetId": "113"
+          }
+        },
+        {
+          "id": "47",
+          "name": "largeAsteroid",
+          "children": [],
+          "components": [],
+          "position": {
+            "x": 6.2230377197265625,
+            "y": 8.677348136901855,
+            "z": 0
+          },
+          "orientation": {
+            "x": 0,
+            "y": 0,
+            "z": 0,
+            "w": 1
+          },
+          "scale": {
+            "x": 1,
+            "y": 1,
+            "z": 1
+          },
+          "visible": true,
+          "layer": 0,
+          "prefab": {
+            "sceneAssetId": "113"
+          }
+        },
+        {
+          "id": "48",
+          "name": "largeAsteroid",
+          "children": [],
+          "components": [],
+          "position": {
+            "x": -10.689506530761719,
+            "y": -6.670384407043457,
+            "z": 0
+          },
+          "orientation": {
+            "x": 0,
+            "y": 0,
+            "z": 0,
+            "w": 1
+          },
+          "scale": {
+            "x": 1,
+            "y": 1,
+            "z": 1
+          },
+          "visible": true,
+          "layer": 0,
+          "prefab": {
+            "sceneAssetId": "113"
+          }
+        },
+        {
+          "id": "41",
+          "name": "largeAsteroid",
+          "children": [],
+          "components": [],
+          "position": {
+            "x": -21.884178161621094,
+            "y": 0.34752655029296875,
+            "z": 0
+          },
+          "orientation": {
+            "x": 0,
+            "y": 0,
+            "z": 0,
+            "w": 1
+          },
+          "scale": {
+            "x": 1,
+            "y": 1,
+            "z": 1
+          },
+          "visible": true,
+          "layer": 0,
+          "prefab": {
+            "sceneAssetId": "113"
+          }
+        },
+        {
+          "id": "36",
+          "name": "largeAsteroid",
+          "children": [],
+          "components": [],
+          "position": {
+            "x": 9.376350402832031,
+            "y": -6.567648887634277,
+            "z": 0
+          },
+          "orientation": {
+            "x": 0,
+            "y": 0,
+            "z": 0,
+            "w": 1
+          },
+          "scale": {
+            "x": 1,
+            "y": 1,
+            "z": 1
+          },
+          "visible": true,
+          "layer": 0,
+          "prefab": {
+            "sceneAssetId": "113"
+          }
+        },
+        {
+          "id": "37",
+          "name": "largeAsteroid",
+          "children": [],
+          "components": [],
+          "position": {
+            "x": 15.651374816894531,
+            "y": 0.5292949676513672,
+            "z": 0
+          },
+          "orientation": {
+            "x": 0,
+            "y": 0,
+            "z": 0,
+            "w": 1
+          },
+          "scale": {
+            "x": 1,
+            "y": 1,
+            "z": 1
+          },
+          "visible": true,
+          "layer": 0,
+          "prefab": {
+            "sceneAssetId": "113"
+          }
         }
       ],
       "components": [],
       "position": {
-        "x": 84.839,
-        "y": -11.398,
-        "z": 3.1
+        "x": 84.83899688720703,
+        "y": -11.8247652053833,
+        "z": 3.0999999046325684
+      },
+      "orientation": {
+        "x": 0,
+        "y": 0,
+        "z": 0,
+        "w": 1
+      },
+      "scale": {
+        "x": 1,
+        "y": 1,
+        "z": 1
+      },
+      "visible": true,
+      "layer": 0,
+      "prefab": null
+    },
+    {
+      "id": "25",
+      "name": "limit",
+      "children": [
+        {
+          "id": "26",
+          "name": "top",
+          "children": [],
+          "components": [
+            {
+              "type": "ArcadeBody2D",
+              "config": {
+                "formatVersion": 2,
+                "type": "box",
+                "movable": true,
+                "width": 50,
+                "height": 0.5,
+                "offset": {
+                  "x": 0,
+                  "y": 0
+                },
+                "bounce": {
+                  "x": 0,
+                  "y": 0
+                },
+                "tileMapAssetId": null,
+                "tileSetPropertyName": null,
+                "layersIndex": null
+              },
+              "id": "0"
+            }
+          ],
+          "position": {
+            "x": -0.9513092041015625,
+            "y": 11.2341947555542,
+            "z": 0
+          },
+          "orientation": {
+            "x": 0,
+            "y": 0,
+            "z": 0,
+            "w": 1
+          },
+          "scale": {
+            "x": 1,
+            "y": 1,
+            "z": 1
+          },
+          "visible": true,
+          "layer": 0,
+          "prefab": null
+        },
+        {
+          "id": "27",
+          "name": "down",
+          "children": [],
+          "components": [
+            {
+              "type": "ArcadeBody2D",
+              "config": {
+                "formatVersion": 2,
+                "type": "box",
+                "movable": true,
+                "width": 50,
+                "height": 0.5,
+                "offset": {
+                  "x": 0,
+                  "y": 0
+                },
+                "bounce": {
+                  "x": 0,
+                  "y": 0
+                },
+                "tileMapAssetId": null,
+                "tileSetPropertyName": null,
+                "layersIndex": null
+              },
+              "id": "0"
+            }
+          ],
+          "position": {
+            "x": -0.9513092041015625,
+            "y": -10.637510299682617,
+            "z": 0
+          },
+          "orientation": {
+            "x": 0,
+            "y": 0,
+            "z": 0,
+            "w": 1
+          },
+          "scale": {
+            "x": 1,
+            "y": 1,
+            "z": 1
+          },
+          "visible": true,
+          "layer": 0,
+          "prefab": null
+        },
+        {
+          "id": "28",
+          "name": "left",
+          "children": [],
+          "components": [
+            {
+              "type": "ArcadeBody2D",
+              "config": {
+                "formatVersion": 2,
+                "type": "box",
+                "movable": true,
+                "width": 0.5,
+                "height": 21.5,
+                "offset": {
+                  "x": 0,
+                  "y": 0
+                },
+                "bounce": {
+                  "x": 0,
+                  "y": 0
+                },
+                "tileMapAssetId": null,
+                "tileSetPropertyName": null,
+                "layersIndex": null
+              },
+              "id": "0"
+            }
+          ],
+          "position": {
+            "x": -26.12779998779297,
+            "y": 0.316864013671875,
+            "z": 0
+          },
+          "orientation": {
+            "x": 0,
+            "y": 0,
+            "z": 0,
+            "w": 1
+          },
+          "scale": {
+            "x": 1,
+            "y": 1,
+            "z": 1
+          },
+          "visible": true,
+          "layer": 0,
+          "prefab": null
+        },
+        {
+          "id": "29",
+          "name": "right",
+          "children": [],
+          "components": [
+            {
+              "type": "ArcadeBody2D",
+              "config": {
+                "formatVersion": 2,
+                "type": "box",
+                "movable": true,
+                "width": 0.5,
+                "height": 21.5,
+                "offset": {
+                  "x": 0,
+                  "y": 0
+                },
+                "bounce": {
+                  "x": 0,
+                  "y": 0
+                },
+                "tileMapAssetId": null,
+                "tileSetPropertyName": null,
+                "layersIndex": null
+              },
+              "id": "0"
+            }
+          ],
+          "position": {
+            "x": 24.2838134765625,
+            "y": 0.316864013671875,
+            "z": 0
+          },
+          "orientation": {
+            "x": 0,
+            "y": 0,
+            "z": 0,
+            "w": 1
+          },
+          "scale": {
+            "x": 1,
+            "y": 1,
+            "z": 1
+          },
+          "visible": true,
+          "layer": 0,
+          "prefab": null
+        }
+      ],
+      "components": [],
+      "position": {
+        "x": 84.7126235961914,
+        "y": -11.909761428833008,
+        "z": 5
       },
       "orientation": {
         "x": 0,

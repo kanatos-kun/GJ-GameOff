@@ -19,6 +19,7 @@ class GUIBehavior extends Sup.Behavior {
               }
               if(Sup.Input.wasMouseButtonJustReleased(0)==true){
                   if(this.state != undefined){
+                    Sup.Audio.playSound("title/button",0.5);
                     Game.state = this.state;
                     Game.changeState();                    
                   }

@@ -10,7 +10,7 @@
           "type": "SpriteRenderer",
           "config": {
             "formatVersion": 1,
-            "spriteAssetId": "96",
+            "spriteAssetId": "97",
             "animationId": null,
             "horizontalFlip": false,
             "verticalFlip": false,
@@ -23,6 +23,27 @@
             "shaderAssetId": null
           },
           "id": "0"
+        },
+        {
+          "type": "Behavior",
+          "config": {
+            "behaviorName": "AsteroidBehavior",
+            "propertyValues": {
+              "life": {
+                "type": "number",
+                "value": 3
+              },
+              "attack": {
+                "type": "number",
+                "value": 30
+              },
+              "sleep": {
+                "type": "boolean",
+                "value": false
+              }
+            }
+          },
+          "id": "1"
         },
         {
           "type": "ArcadeBody2D",
@@ -43,27 +64,6 @@
             "tileMapAssetId": null,
             "tileSetPropertyName": null,
             "layersIndex": null
-          },
-          "id": "1"
-        },
-        {
-          "type": "Behavior",
-          "config": {
-            "behaviorName": "AsteroidBehavior",
-            "propertyValues": {
-              "life": {
-                "type": "number",
-                "value": 1
-              },
-              "attack": {
-                "type": "number",
-                "value": 10
-              },
-              "sleep": {
-                "type": "boolean",
-                "value": false
-              }
-            }
           },
           "id": "2"
         }

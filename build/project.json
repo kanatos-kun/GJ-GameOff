@@ -73,8 +73,13 @@
       "children": [
         {
           "id": "52",
-          "name": "title scene",
+          "name": "scene",
           "type": "scene"
+        },
+        {
+          "id": "116",
+          "name": "button",
+          "type": "sound"
         },
         {
           "id": "51",
@@ -94,8 +99,18 @@
           "type": "sprite"
         },
         {
+          "id": "114",
+          "name": "shoot",
+          "type": "sound"
+        },
+        {
+          "id": "115",
+          "name": "explosion",
+          "type": "sound"
+        },
+        {
           "id": "67",
-          "name": "player behavior",
+          "name": "playerBehavior",
           "type": "script"
         },
         {
@@ -276,13 +291,25 @@
               "id": "109",
               "name": "medium_asteroid",
               "type": null,
-              "children": []
+              "children": [
+                {
+                  "id": "112",
+                  "name": "prefab",
+                  "type": "scene"
+                }
+              ]
             },
             {
               "id": "110",
               "name": "large_asteroid",
               "type": null,
-              "children": []
+              "children": [
+                {
+                  "id": "113",
+                  "name": "prefab",
+                  "type": "scene"
+                }
+              ]
             }
           ]
         }

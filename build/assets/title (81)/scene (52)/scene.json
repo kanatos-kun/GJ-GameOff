@@ -15,7 +15,7 @@
               "children": [
                 {
                   "id": "3",
-                  "name": "nouvelle partie",
+                  "name": "button_nouvelle partie",
                   "children": [
                     {
                       "id": "13",
@@ -258,7 +258,7 @@
                     "receiveShadow": false,
                     "color": "797979",
                     "overrideOpacity": true,
-                    "opacity": 0.52,
+                    "opacity": 0.5,
                     "materialType": "basic",
                     "shaderAssetId": null
                   },
